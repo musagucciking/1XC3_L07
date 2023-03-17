@@ -33,4 +33,4 @@ test: all
 	diff $(TEST_DATA_DIR)/max_expected.txt $(TEST_DIR)/max_output.txt
 	./$(BUILD_DIR)/multiply 2 < $(TEST_DATA_DIR)/multiply_input.txt > $(TEST_DIR)/multiply_output.txt
 	diff $(TEST_DATA_DIR)/multiply_expected.txt $(TEST_DIR)/multiply_output.txt
-
+	rm -rf $(TEST_DIR)
